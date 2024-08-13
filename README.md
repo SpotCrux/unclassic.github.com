@@ -1,2 +1,1 @@
-# unclassic.github.com
-unClassic Websita
+# unClassic
