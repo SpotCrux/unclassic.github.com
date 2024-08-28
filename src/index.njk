@@ -2,28 +2,22 @@
 layout: 'base.njk'
 title: unClassic Foods
 ---
-
-<section class="px-[10%] absolute h-[90vh] items-center top-0 w-full -z-50" style="background: url(../assets/mushroom.jpg); background-position: bottom center; background-size: cover; ">
-      <div class="mt-52 grid ">
-
-        <p class="text-[#6b5b4d] text-center font-bold text-3xl  uppercase leading-relaxed ">Indulge in Nature’s Bounty: <br>
-      
-            <span class="text-[#f24c0f] font-bold text-7xl uppercase px-[5%] ">Taste the Magic of Mushrooms.</span>
-        </p>
-
-        <div class="mx-auto mt-16 flex">
-            <a href="product" class="bg-[#f24c0f] px-12 text-white rounded-lg py-4 text-xl mr-8">Order Now</a>  
-            <a href="#" class="border border-[#f24c0f] px-12 py-4 text-xl text-[#f24c0f] font-bold rounded-xl">Read more</a>  
-        </div>
-        </div>
+<section class="flex flex-col mt-10 sm:flex-row md:mt-10 md:px-[10%] items-center py-12">
+    <div class="px-10 text-center sm:text-left sm:w-[50%] sm:pt-28 md:pl-10 md:-mt-6">
+        <p class="text-md sm:text-3xl sm:mb-6">Indulges in Nature's Bounty</p>
+        <p class="text-2xl sm:text-6xl text-[#f24c0f] font-bold sm:mb-6">TASTE THE MAGIC OF MUSHROOM</p>
+        <p class="text-sm md:text-lg md:mb-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, amet ab. At alias labore, ratione, voluptates illum ab magni perferendis excepturi enim voluptate eius molestias?</p>
+        <button class="mx-auto bg-[#f24c0f] text-white md:px-10 md:py-3 rounded-3xl">Get it Now!</button>
+    </div>
+    <div class="flex-1 w-[50%] h-full">
+        <img src="./assets/image1.webp" alt="" class="rounded-lg">
         
     </div>
- 
 </section>
 
-
+`
 <!-- {# Products #} -->
-<article class="relative mt-[80vh] bg-gray-100 p-20" id="product">
+<article class="relative bg-gray-200 p-20" id="product">
    
         <p class="text-5xl font-bold  text-center mb-10">Our Products</p>
      <div class="px-[10%] py-10  grid grid-cols-2 gap-20 rounded-3xl">
@@ -73,7 +67,7 @@ title: unClassic Foods
 
 <!-- Blog -->
 <article class="relative p-20 px-[10%]" id="blog">
-   <div class="mb-10 flex justify-between items-center">
+   <div class="mb-10 flex flex-1 justify-between items-center">
     <p class="text-5xl font-bold">What's new?</p>
     <a href="#" class="text-xl font-light">Read more blog</a>    
     </div>

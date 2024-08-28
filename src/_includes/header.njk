@@ -1,15 +1,28 @@
-<header class="flex flex-1 z-20 justify-between px-[10%] py-4 items-center ">
-    <!-- <p class="text-[#c15a15] text-4xl font-bold">unClassic</p> -->
-    <img src="../assets/logo1.png" class="w-48" alt="">
-    <nav>
+<header class="px-[10%]">
+    <div class="relative mx-auto flex flex-col sm:flex-row max-w-scree-lg sm:items-center sm:justify-between py-4">
+    <a>
+        <img src="../assets/logo1.png" alt="unclassic"  class=" pl-[10%] md:w-[14rem] w-[8rem] ">
+</a>
 
-        <ul class="flex gap-10">
-            <li><a href="/#product">Products</a></li>
-               <li><a href="/#blog">Blog</a></li>
-            <li><a href="/#testimonial">Testimonials</a></li>
-         
-            <li><a href="#">About us</a></li>
+    <input class="peer hidden" type="checkbox" name="navbar-open" id="navbar-open" class="transition duration-1000 ease-in-out ">
+    <label class="cursor-pointer absolute right-0 text-xl sm:hidden" for="navbar-open">
+  
+        <span class="material-symbols-outlined">
+            menu
+            </span>
+        </label>
+    <nav class="peer-checked:block hidden py-4 sm:block sm:mt-0 ">
+        <ul class="flex flex-col items-center gap-8 sm:flex-row bg-gray-200 sm:bg-white w-full texl-left sm:text-center ">
+
+
+
+
+            <li><a href="#" class=" hover:transition hover:duration-700 hover:ease-in-out hover:text-orange-700 hover:font-bold">Home</a></li>
+            <li><a href="#" class="hover:transition hover:duration-700 hover:ease-in-out hover:text-orange-700 hover:font-bold">Products</a></li>
+            <li><a href="#" class="hover:transition hover:duration-700 hover:ease-in-out hover:text-orange-700 hover:font-bold">Blogs</a></li>
+            <li><a href="#" class="hover:transition hover:duration-700 hover:ease-in-out hover:text-orange-700 hover:font-bold">About Us</a></li>
         </ul>
-
+  
     </nav>
+    </div>
 </header>
