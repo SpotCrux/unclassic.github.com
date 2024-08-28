@@ -556,14 +556,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.visible{
-  visibility: visible;
-}
-
-.invisible{
-  visibility: hidden;
-}
-
 .absolute{
   position: absolute;
 }
@@ -579,6 +571,14 @@ video {
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.-mt-20{
+  margin-top: -5rem;
+}
+
+.-mt-5{
+  margin-top: -1.25rem;
 }
 
 .mb-10{
@@ -603,18 +603,6 @@ video {
 
 .mt-6{
   margin-top: 1.5rem;
-}
-
-.-mt-5{
-  margin-top: -1.25rem;
-}
-
-.-mt-10{
-  margin-top: -2.5rem;
-}
-
-.-mt-20{
-  margin-top: -5rem;
 }
 
 .block{
@@ -653,14 +641,6 @@ video {
   cursor: pointer;
 }
 
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-3{
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -679,10 +659,6 @@ video {
 
 .gap-10{
   gap: 2.5rem;
-}
-
-.gap-20{
-  gap: 5rem;
 }
 
 .gap-8{
@@ -735,6 +711,10 @@ video {
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
 
+.p-10{
+  padding: 2.5rem;
+}
+
 .p-12{
   padding: 3rem;
 }
@@ -751,18 +731,14 @@ video {
   padding: 1.5rem;
 }
 
-.p-10{
-  padding: 2.5rem;
-}
-
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
 
-.px-20{
-  padding-left: 5rem;
-  padding-right: 5rem;
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-8{
@@ -793,11 +769,6 @@ video {
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .pb-12{
@@ -845,11 +816,6 @@ video {
 
 .text-5xl{
   font-size: 3rem;
-  line-height: 1;
-}
-
-.text-6xl{
-  font-size: 3.75rem;
   line-height: 1;
 }
 
@@ -1024,10 +990,6 @@ body{
     padding-top: 7rem;
   }
 
-  .sm\:text-left{
-    text-align: left;
-  }
-
   .sm\:text-center{
     text-align: center;
   }
@@ -1036,44 +998,15 @@ body{
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
-
-  .sm\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
-  }
 }
 
 @media (min-width: 768px){
-  .md\:visible{
-    visibility: visible;
-  }
-
-  .md\:invisible{
-    visibility: hidden;
-  }
-
-  .md\:-m-10{
-    margin: -2.5rem;
-  }
-
-  .md\:-m-1{
-    margin: -0.25rem;
-  }
-
   .md\:-mt-10{
     margin-top: -2.5rem;
   }
 
   .md\:mb-8{
     margin-bottom: 2rem;
-  }
-
-  .md\:mt-10{
-    margin-top: 2.5rem;
-  }
-
-  .md\:-mt-5{
-    margin-top: -1.25rem;
   }
 
   .md\:inline-block{
@@ -1120,14 +1053,9 @@ body{
     text-align: left;
   }
 
-  .md\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .md\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .md\:text-4xl{
@@ -1135,14 +1063,9 @@ body{
     line-height: 2.5rem;
   }
 
-  .md\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .md\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
+  .md\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .md\:text-xl{
@@ -1152,24 +1075,12 @@ body{
 }
 
 @media (min-width: 1024px){
-  .lg\:visible{
-    visibility: visible;
-  }
-
   .lg\:inline-block{
     display: inline-block;
   }
 
-  .lg\:grid{
-    display: grid;
-  }
-
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-1{
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-3{
@@ -1180,16 +1091,12 @@ body{
     gap: 5rem;
   }
 
-  .lg\:gap-2{
-    gap: 0.5rem;
+  .lg\:p-20{
+    padding: 5rem;
   }
 
   .lg\:p-6{
     padding: 1.5rem;
-  }
-
-  .lg\:p-20{
-    padding: 5rem;
   }
 
   .lg\:px-\[10\%\]{
@@ -1197,24 +1104,14 @@ body{
     padding-right: 10%;
   }
 
-  .lg\:px-\[\]{
-    padding-left: ;
-    padding-right: ;
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
-  .lg\:px-\[10\]{
-    padding-left: 10;
-    padding-right: 10;
-  }
-
-  .lg\:px-10{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
-  .lg\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .lg\:text-4xl{
@@ -1230,25 +1127,6 @@ body{
   .lg\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .lg\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .lg\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .lg\:font-bold{
-    font-weight: 700;
   }
 }
 
