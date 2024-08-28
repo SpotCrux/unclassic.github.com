@@ -2,14 +2,17 @@
 layout: 'base.njk'
 title: unClassic Foods
 ---
-<section class="flex flex-col mt-10 sm:flex-row md:mt-10 md:px-[10%] items-center py-12">
-    <div class="px-10 text-center sm:text-left sm:w-[50%] sm:pt-28 md:pl-10 md:-mt-6">
-        <p class="text-md sm:text-3xl sm:mb-6">Indulges in Nature's Bounty</p>
-        <p class="text-2xl sm:text-6xl text-[#f24c0f] font-bold sm:mb-6">TASTE THE MAGIC OF MUSHROOM</p>
-        <p class="text-sm md:text-lg md:mb-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, amet ab. At alias labore, ratione, voluptates illum ab magni perferendis excepturi enim voluptate eius molestias?</p>
-        <button class="mx-auto bg-[#f24c0f] text-white md:px-10 md:py-3 rounded-3xl">Get it Now!</button>
+<section class="grid block mt-6 md:grid-cols-2  md:px-[10%] items-center py-12">
+    <div class=" unhidden md:hidden p-10 md:-mt-10">
+        <img src="./assets/image1.webp" alt="">
     </div>
-    <div class="flex-1 w-[50%] h-full">
+    <div class="px-10 text-center md:text-left  sm:pt-28 md:pl-10 md:-mt-5">
+        <p class="text-lg sm:text-3xl mb-3 sm:mb-6">Indulges in Nature's Bounty</p>
+        <p class="text-3xl xl:text-6xl lg:text-5xl md:text-4xl sm:4xl mb-3 text-[#f24c0f] font-bold sm:mb-6">TASTE THE MAGIC OF MUSHROOM</p>
+        <p class="text-sm md:text-lg md:mb-8 mb-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, amet ab. At alias labore, ratione, voluptates illum ab magni perferendis excepturi enim voluptate eius molestias?</p>
+        <button class="mx-auto bg-[#f24c0f] px-8 py-2 text-white md:px-10 md:py-3 rounded-3xl">Get it Now!</button>
+    </div>
+    <div class="hidden md:inline-block">
         <img src="./assets/image1.webp" alt="" class="rounded-lg">
         
     </div>
